@@ -23,5 +23,6 @@
         "src": "/(.*)",
         "dest": "e_voting/wsgi.py"
       }
-    ]
+    ],
+    "rewrites": [{ "source": "/(.*)", "destination": "/" }]
   }
