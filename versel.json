@@ -2,7 +2,7 @@
     "version": 2,
     "builds": [
       {
-        "src": "e_voting/wsgi.py",
+        "src": "e-voting-with-django-main/e_voting/wsgi.py",
         "use": "@vercel/python",
         "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
       },
@@ -21,7 +21,7 @@
       },
       {
         "src": "/(.*)",
-        "dest": "e_voting/wsgi.py"
+        "dest": "e-voting-with-django-main/e_voting/wsgi.py"
       }
     ],
     "rewrites": [{ "source": "/(.*)", "destination": "/" }]
